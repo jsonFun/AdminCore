@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdminCore_Comm\AdminCore_Comm.csproj" />
+    <ProjectReference Include="..\AdminCore_DAL\AdminCore_DAL.csproj" />
+  </ItemGroup>
+
+</Project>
