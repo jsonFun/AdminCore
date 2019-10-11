@@ -16,10 +16,12 @@ namespace AdminCore_Comm
         public static string SqlServerConfig
         {
             get {
-                if(string.IsNullOrEmpty(_SqlServerConfig))
+                _SqlServerConfig = "Data Source=.;Initial Catalog=AdminCore;Persist Security Info=True;User ID=sa;Password=8023";
+                if (string.IsNullOrEmpty(_SqlServerConfig))
                 {
                     _SqlServerConfig = ConfigHelper.Configuration.GetConnectionString("SqlServerConnection"); 
                 }
+               
                 return _SqlServerConfig;
             }
         }

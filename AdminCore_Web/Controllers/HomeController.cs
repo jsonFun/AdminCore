@@ -13,6 +13,9 @@ namespace AdminCore_Web.Controllers
     {
         public IActionResult Index()
         {
+            string strTmp = "abcdefg某某某";
+            int i = System.Text.Encoding.Default.GetBytes(strTmp).Length;
+            int j = strTmp.Length;
             var ss = SysConfig.SqlServerConfig;
             return View();
         }
